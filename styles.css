@@ -1083,3 +1083,27 @@ body {
         height: 200px;
     }
 }
+/* Leadership Image */
+.principal-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 15px auto;
+    display: block;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .principal-image {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .principal-image {
+        width: 120px;
+        height: 120px;
+    }
+}

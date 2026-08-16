@@ -19,7 +19,7 @@ html {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', 'Jost', sans-serif;
     line-height: 1.6;
     color: var(--text-dark);
 }
@@ -133,6 +133,8 @@ body {
     font-size: 3.5rem;
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
 }
 
 .hero h2 {
@@ -186,6 +188,7 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 .btn-primary {
@@ -244,6 +247,7 @@ body {
 .fact-card h3 {
     color: var(--primary-color);
     margin-bottom: 10px;
+    font-family: 'Jost', sans-serif;
 }
 
 /* Section Headers */
@@ -256,6 +260,7 @@ body {
     font-size: 2.5rem;
     color: var(--primary-color);
     margin-bottom: 10px;
+    font-family: 'Jost', sans-serif;
 }
 
 .section-header p {
@@ -280,6 +285,7 @@ body {
     font-size: 2rem;
     color: var(--primary-color);
     margin-bottom: 15px;
+    font-family: 'Jost', sans-serif;
 }
 
 .about-text p {
@@ -296,6 +302,7 @@ body {
 .about-text h4 {
     color: var(--primary-color);
     margin: 20px 0 10px;
+    font-family: 'Jost', sans-serif;
 }
 
 .principles-list {
@@ -320,9 +327,27 @@ body {
     border-left: 4px solid var(--secondary-color);
 }
 
+.principal-card {
+    text-align: center;
+}
+
+.principal-image-placeholder {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, var(--primary-color), #0d5c2d);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto;
+    color: var(--white);
+    font-size: 3rem;
+}
+
 .info-card h4 {
     color: var(--primary-color);
     margin-bottom: 10px;
+    font-family: 'Jost', sans-serif;
 }
 
 .info-card p {
@@ -354,6 +379,7 @@ body {
     color: var(--primary-color);
     margin-bottom: 20px;
     font-size: 1.3rem;
+    font-family: 'Jost', sans-serif;
 }
 
 .amount-buttons {
@@ -372,6 +398,7 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
 }
 
 .amount-btn:hover,
@@ -455,6 +482,7 @@ body {
 .payment-methods h3 {
     color: var(--primary-color);
     margin-bottom: 25px;
+    font-family: 'Jost', sans-serif;
 }
 
 .payment-card {
@@ -480,6 +508,7 @@ body {
 .payment-header h4 {
     color: var(--primary-color);
     margin: 0;
+    font-family: 'Jost', sans-serif;
 }
 
 .payment-card p {
@@ -509,6 +538,7 @@ body {
 .impact-section h4 {
     color: var(--primary-color);
     margin-bottom: 15px;
+    font-family: 'Jost', sans-serif;
 }
 
 .impact-items {
@@ -555,6 +585,7 @@ body {
     color: var(--primary-color);
     margin-bottom: 30px;
     text-align: center;
+    font-family: 'Jost', sans-serif;
 }
 
 .faq-items {
@@ -618,6 +649,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
+    margin-bottom: 30px;
 }
 
 .gallery-item {
@@ -628,15 +660,44 @@ body {
     height: 250px;
 }
 
-.gallery-item img {
+.gallery-placeholder {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: var(--white);
+    transition: all 0.3s ease;
 }
 
-.gallery-item:hover img {
-    transform: scale(1.1);
+.building-placeholder {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.students-placeholder {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+}
+
+.class-placeholder {
+    background: linear-gradient(135deg, #f39c12, #d68910);
+}
+
+.quran-placeholder {
+    background: linear-gradient(135deg, #27ae60, #1e8449);
+}
+
+.event-placeholder {
+    background: linear-gradient(135deg, #9b59b6, #7d3c98);
+}
+
+.construction-placeholder {
+    background: linear-gradient(135deg, #34495e, #2c3e50);
+}
+
+.gallery-item:hover .gallery-placeholder {
+    transform: scale(1.05);
 }
 
 .gallery-overlay {
@@ -664,6 +725,14 @@ body {
     margin: 0;
 }
 
+.gallery-note {
+    text-align: center;
+    padding: 20px;
+    background: var(--bg-light);
+    border-radius: 8px;
+    color: var(--text-light);
+}
+
 /* Contact Section */
 .contact {
     background: linear-gradient(135deg, var(--primary-color), #0d5c2d);
@@ -680,6 +749,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
+    margin-bottom: 50px;
 }
 
 .contact-info {
@@ -709,6 +779,7 @@ body {
 .contact-card h4 {
     color: var(--secondary-color);
     margin-bottom: 10px;
+    font-family: 'Jost', sans-serif;
 }
 
 .contact-card p {
@@ -726,6 +797,7 @@ body {
 .contact-form h3 {
     color: var(--secondary-color);
     margin-bottom: 20px;
+    font-family: 'Jost', sans-serif;
 }
 
 .contact-form .form-group label {
@@ -750,6 +822,33 @@ body {
     border-color: var(--secondary-color);
 }
 
+/* Map Section */
+.map-section {
+    margin-top: 50px;
+}
+
+.map-section h3 {
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 30px;
+    font-family: 'Jost', sans-serif;
+    font-size: 2rem;
+}
+
+.map-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.map-info {
+    text-align: center;
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
 /* Footer */
 .footer {
     background: #0d5c2d;
@@ -767,6 +866,7 @@ body {
 .footer-section h4 {
     color: var(--secondary-color);
     margin-bottom: 15px;
+    font-family: 'Jost', sans-serif;
 }
 
 .footer-section p {
@@ -895,6 +995,10 @@ body {
     .gallery-item {
         height: 200px;
     }
+    
+    .map-container iframe {
+        height: 300px !important;
+    }
 }
 
 @media (max-width: 480px) {
@@ -929,5 +1033,11 @@ body {
 
     .section-header h2 {
         font-size: 1.5rem;
+    }
+    
+    .principal-image-placeholder {
+        width: 100px;
+        height: 100px;
+        font-size: 2.5rem;
     }
 }

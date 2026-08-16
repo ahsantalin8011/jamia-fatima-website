@@ -1033,14 +1033,26 @@ body {
         font-size: 3rem;
     }
 }
-/* Construction Images */
+/* Construction Section */
+.construction-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.construction-item {
+    width: 100%;
+}
+
 .construction-image {
     width: 100%;
-    height: 300px;
+    height: 280px;
     object-fit: cover;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     transition: all 0.3s ease;
+    display: block;
 }
 
 .construction-image:hover {
@@ -1048,24 +1060,26 @@ body {
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* Leadership Image */
-.principal-image {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 15px auto;
-    display: block;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+@media (max-width: 1024px) {
+    .construction-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .construction-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .construction-image {
+        height: 250px;
+    }
 }
 
 @media (max-width: 480px) {
     .construction-image {
         height: 200px;
-    }
-    
-    .principal-image {
-        width: 100px;
-        height: 100px;
     }
 }
